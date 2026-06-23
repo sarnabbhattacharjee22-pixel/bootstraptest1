@@ -1829,3 +1829,7 @@ a{
         }
 
 /* end */
+#offcanvasNavbar {
+  width: 75%;      
+  max-width: 75%;  
+}
