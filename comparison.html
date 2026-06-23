@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/styles/style.css">
+    <link rel="stylesheet" href="asset/styles/responsive.css">
+    <link rel="icon" type="image/png" href="./asset/images/icon.png">
+    <title>Furniro | Product Comparison</title>
+</head>
+<body>
+
+    <header class="bg-white px-md-4">
+        <nav class="navbar navbar-expand-md py-4 d-flex justify-content-between align-items-center">
+            <a class="navbar-brand m-0" href="#">
+                <img src="./asset/images/logo.png" alt="Furniro Logo" height="32">
+            </a>
+            <div class="offcanvas offcanvas-md offcanvas-start flex-grow-1" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header justify-content-end pb-0">
+                    <button type="button" class="btn-close fs-5" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center">
+                    <ul class="navbar-nav gap-md-5 gap-4 fw-medium text-center align-items-center">
+                        <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+                <div class="d-none d-md-flex gap-4 align-items-center">
+                    <a href="#"><img src="asset/images/user.png" alt="User" height="24"></a>
+                    <a href="#"><img src="asset/images/magnify.png" alt="Search" height="24"></a>
+                    <a href="#"><img src="asset/images/heart.png" alt="Favorites" height="24"></a>
+                    <a href="#"><img src="asset/images/cart.png" alt="Cart" height="24"></a>
+                </div>
+                <button class="navbar-toggler border-0 shadow-none pe-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" /></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner d-flex justify-content-center align-items-center text-center">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center py-5">
+                    <h1 class="display-5 fw-medium mb-2">Product Comparison</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none fw-bold">Home</a></li>
+                            <li class="text-dark" aria-current="page">> Comparison</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="pb-5 bg-white">
+        <div class="container compare-table-wrapper">
+            <table class="compare-table">
+                
+                <thead>
+                    <tr>
+                        <th>
+                            <h3 class="fw-bold mb-3 fs-3 pe-lg-3" style="line-height: 1.3;">Go to Product page for more Products</h3>
+                            <a href="shop.html" class="text-secondary fw-medium hover-gold pb-1 d-inline-block border-bottom border-secondary">View More</a>
+                        </th>
+                        
+                        <th>
+                            <img src="asset/images/compare-product-1.png" class="w-100 mb-3 rounded bg-beige" style="height: 180px; object-fit: cover;" alt="Asgaard Sofa">
+                            <h4 class="fw-bold fs-5 mb-1">Asgaard Sofa</h4>
+                            <p class="fw-medium mb-2">Rs. 250,000.00</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="fw-bold fs-5">4.7</span>
+                                <div class="d-flex gap-1">
+                                    <img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star-half.png" width="18">
+                                </div>
+                                <span class="text-secondary border-start border-2 ps-2 ms-1" style="font-size: 0.85rem;">204 Review</span>
+                            </div>
+                        </th>
+
+                        <th>
+                            <img src="asset/images/compare-product-2.png" class="w-100 mb-3 rounded bg-beige" style="height: 180px; object-fit: cover;" alt="Outdoor Sofa Set">
+                            <h4 class="fw-bold fs-5 mb-1">Outdoor Sofa Set</h4>
+                            <p class="fw-medium mb-2">Rs. 224,000.00</p>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <span class="fw-bold fs-5">4.2</span>
+                                <div class="d-flex gap-1">
+                                    <img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18"><img src="asset/images/star.png" width="18" style="opacity:0.3;">
+                                </div>
+                                <span class="text-secondary border-start border-2 ps-2 ms-1" style="font-size: 0.85rem;">145 Review</span>
+                            </div>
+                        </th>
+
+                        <th class="pt-2">
+                            <h4 class="fw-bold fs-4 mb-3">Add A Product</h4>
+                            <button class="btn-choose w-100 shadow-none position-relative">
+                                Choose a Product
+                                <img src="asset/images/arrow-down-white.png" width="14" class="position-absolute end-0 top-50 translate-middle-y me-3">
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    
+                    <!-- ====== SECTION: GENERAL ====== -->
+                    <tr class="table-divider">
+                        <td><h3 class="compare-section-title">General</h3></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Sales Package</td>
+                        <td class="compare-value">1 sectional sofa</td>
+                        <td class="compare-value">1 Three Seater, 2 Single Seater</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Model Number</td>
+                        <td class="compare-value">TFCBLIGRBL6SR6</td>
+                        <td class="compare-value">DTUBLGRBL568</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Secondary Material</td>
+                        <td class="compare-value">Solid Wood</td>
+                        <td class="compare-value">Solid Wood</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Configuration</td>
+                        <td class="compare-value">L-shaped</td>
+                        <td class="compare-value">L-shaped</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Upholstery Material</td>
+                        <td class="compare-value">Fabric + Cotton</td>
+                        <td class="compare-value">Fabric + Cotton</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Upholstery Color</td>
+                        <td class="compare-value">Bright Grey & Lion</td>
+                        <td class="compare-value">Bright Grey & Lion</td>
+                        <td></td>
+                    </tr>
+
+                    <!-- ====== SECTION: PRODUCT ====== -->
+                    
+                    <tr class="table-divider">
+                        <td><h3 class="compare-section-title">Product</h3></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Filling Material</td>
+                        <td class="compare-value">Foam</td>
+                        <td class="compare-value">Matte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Finish Type</td>
+                        <td class="compare-value">Bright Grey & Lion</td>
+                        <td class="compare-value">Bright Grey & Lion</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Adjustable Headrest</td>
+                        <td class="compare-value">No</td>
+                        <td class="compare-value">yes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Maximum Load Capacity</td>
+                        <td class="compare-value">280 KG</td>
+                        <td class="compare-value">300 KG</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Origin of Manufacture</td>
+                        <td class="compare-value">India</td>
+                        <td class="compare-value">India</td>
+                        <td></td>
+                    </tr>
+
+                    <!-- ====== SECTION: DIMENSIONS ====== -->
+                    <tr class="table-divider">
+                        <td><h3 class="compare-section-title">Dimensions</h3></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Width</td>
+                        <td class="compare-value">265.32 cm</td>
+                        <td class="compare-value">265.32 cm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Height</td>
+                        <td class="compare-value">76 cm</td>
+                        <td class="compare-value">76 cm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Depth</td>
+                        <td class="compare-value">167.76 cm</td>
+                        <td class="compare-value">167.76 cm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Weight</td>
+                        <td class="compare-value">45 KG</td>
+                        <td class="compare-value">65 KG</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Seat Height</td>
+                        <td class="compare-value">41.52 cm</td>
+                        <td class="compare-value">41.52 cm</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Leg Height</td>
+                        <td class="compare-value">5.46 cm</td>
+                        <td class="compare-value">5.46 cm</td>
+                        <td></td>
+                    </tr>
+
+                    <!-- ====== SECTION: WARRANTY ====== -->
+                    <tr class="table-divider">
+                        <td><h3 class="compare-section-title">Warranty</h3></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Warranty Summary</td>
+                        <td class="compare-value">1 Year Manufacturing Warranty</td>
+                        <td class="compare-value">1.2 Year Manufacturing Warranty</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Warranty Service Type</td>
+                        <td class="compare-value">For Warranty Claims or Any Product Related Issues Please Email at operations@furniro.com</td>
+                        <td class="compare-value">For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Covered in Warranty</td>
+                        <td class="compare-value">Warranty Against Manufacturing Defect</td>
+                        <td class="compare-value">Warranty of the product is limited to manufacturing defects only.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Not Covered in Warranty</td>
+                        <td class="compare-value">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
+                        <td class="compare-value">The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="compare-label">Domestic Warranty</td>
+                        <td class="compare-value pb-5">1 Year</td>
+                        <td class="compare-value pb-5">3 Months</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td class="pt-5 pb-5"><button class="add-cart-btn">Add To Cart</button></td>
+                        <td class="pt-5 pb-5"><button class="add-cart-btn">Add To Cart</button></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="features-section py-5" style="background-color: #FAF3EA;">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-md-start">
+                    <img src="./asset/images/trophy.png" alt="High Quality" width="50" height="50" class="me-md-3 mb-3 mb-md-0">
+                    <div>
+                        <h5 class="mb-0 fw-bold fs-5">High Quality</h5>
+                        <span class="text-secondary fw-medium" style="font-size: 0.9rem;">crafted from top materials</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-md-start">
+                    <img src="./asset/images/guarantee.png" alt="Warranty Protection" width="50" height="50" class="me-md-3 mb-3 mb-md-0">
+                    <div>
+                        <h5 class="mb-0 fw-bold fs-5">Warranty Protection</h5>
+                        <span class="text-secondary fw-medium" style="font-size: 0.9rem;">Over 2 years</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-md-start">
+                    <img src="./asset/images/shipping.png" alt="Free Shipping" width="50" height="50" class="me-md-3 mb-3 mb-md-0">
+                    <div>
+                        <h5 class="mb-0 fw-bold fs-5">Free Shipping</h5>
+                        <span class="text-secondary fw-medium" style="font-size: 0.9rem;">Order over 150 $</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-md-start">
+                    <img src="./asset/images/support.png" alt="24 / 7 Support" width="50" height="50" class="me-md-3 mb-3 mb-md-0">
+                    <div>
+                        <h5 class="mb-0 fw-bold fs-5">24 / 7 Support</h5>
+                        <span class="text-secondary fw-medium" style="font-size: 0.9rem;">Dedicated support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-5 border-top">
+        <div class="container pt-4">
+            <div class="row pb-4 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h2 class="fw-bold mb-4 pb-2">Furniro.</h2>
+                    <p class="text-secondary fw-medium pe-lg-4" style="line-height: 1.6;">400 University Drive Suite 200 Coral Gables,<br>FL 33134 USA</p>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 mb-4">
+                    <h5 class="fw-medium text-secondary mb-4 pb-2">Links</h5>
+                    <ul class="list-unstyled p-0 m-0 d-flex flex-column gap-4 fw-medium">
+                        <li><a href="index.html" class="text-dark text-decoration-none hover-gold">Home</a></li>
+                        <li><a href="shop.html" class="text-dark text-decoration-none hover-gold">Shop</a></li>
+                        <li><a href="about.html" class="text-dark text-decoration-none hover-gold">About</a></li>
+                        <li><a href="contact.html" class="text-dark text-decoration-none hover-gold">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 mb-4">
+                    <h5 class="fw-medium text-secondary mb-4 pb-2">Help</h5>
+                    <ul class="list-unstyled p-0 m-0 d-flex flex-column gap-4 fw-medium">
+                        <li><a href="#" class="text-dark text-decoration-none hover-gold">Payment Options</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none hover-gold">Returns</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none hover-gold">Privacy Policies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-medium text-secondary mb-4 pb-2">Newsletter</h5>
+                    <form class="d-flex flex-wrap flex-sm-nowrap gap-3 align-items-end">
+                        <div class="border-bottom border-dark pb-1 flex-grow-1">
+                            <input type="email" class="form-control border-0 shadow-none px-0 bg-transparent text-secondary" placeholder="Enter Your Email Address" required style="box-shadow: none;">
+                        </div>
+                        <div class="border-bottom border-dark pb-1">
+                            <button type="submit" class="btn border-0 shadow-none fw-bold px-0 bg-transparent text-dark hover-gold pb-0">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top pt-4 mt-2 pb-4 text-center text-md-start">
+                <p class="mb-0 text-dark fw-medium">2023 furniro. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
