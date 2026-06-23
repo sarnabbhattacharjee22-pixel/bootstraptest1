@@ -16,7 +16,7 @@
             <a class="navbar-brand m-0" href="#">
                 <img src="./asset/images/logo.png" alt="Furniro Logo" height="32">
             </a>
-            <div class="offcanvas offcanvas-md offcanvas-start flex-grow-1" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false">
+            <div class="offcanvas offcanvas-md offcanvas-start flex-grow-1 tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false">
                 <div class="offcanvas-header justify-content-end pb-0">
                     <button type="button" class="btn-close fs-5" data-bs-dismiss="offcanvas"></button>
                 </div>
@@ -63,7 +63,7 @@
         </section>
 
         <section class="py-5 bg-white">
-            <div class="container text-center pt-5 pb-2">
+            <div class="container text-center pt-5 pb-2" id="cards-home-index">
                 <h2 class="fw-bold mb-2 fs-2">Browse The Range</h2>
                 <p class="text-secondary mb-5" style="font-size: 1.1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 
@@ -88,15 +88,15 @@
             <div class="container text-center">
                 <h2 class="fw-bold mb-5 fs-1">Our Products</h2>
                 
-                <div class="row g-4 text-start mb-5 pb-3">
+                <div class="row g-4 text-start mb-5 pb-3" id="cards-home-index">
                     
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" >
                         <div class="card product-card border-0 rounded-0 h-100">
                             <div class="position-relative overflow-hidden product-image-container">
                                 <img src="./asset/images/syltherine.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #E97171;">-30%</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -120,7 +120,7 @@
                             <div class="position-relative overflow-hidden product-image-container">
                                 <img src="./asset/images/leviosa.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -144,7 +144,7 @@
                                 <img src="./asset/images/lolito.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #E97171;">-50%</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -169,7 +169,7 @@
                                 <img src="./asset/images/respira.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #2EC1AC;">New</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -192,7 +192,7 @@
                             <div class="position-relative overflow-hidden product-image-container">
                                 <img src="./asset/images/grifo.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -216,7 +216,7 @@
                                 <img src="./asset/images/muggo.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #2EC1AC;">New</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -240,7 +240,7 @@
                                 <img src="./asset/images/pingky.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #E97171;">-50%</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -265,7 +265,7 @@
                                 <img src="./asset/images/potty.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #2EC1AC;">New</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -298,13 +298,13 @@
                     <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-4 text-center text-lg-start">
                         <h2 class="fw-bold mb-3" style="font-size: 2.5rem; line-height: 1.2;">50+ Beautiful rooms inspiration</h2>
                         <p class="text-secondary mb-4" style="font-size: 1.1rem; line-height: 1.6;">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-                        <button class="btn text-white fw-bold px-5 py-3 rounded-0 bg-gold">Explore More</button>
+                        <button class="btn text-white fw-bold px-5 py-3 rounded-0 bg-gold" id="home-explore-btn">Explore More</button>
                     </div>
 
                     <div class="col-lg-8 overflow-hidden">
                         <div class="d-flex gap-4 align-items-center">
                             
-                            <div class="position-relative shadow" style="min-width: 380px;">
+                            <div class="position-relative shadow" style="min-width: 380px;" >
                                 <img src="./asset/images/room1.png" class="w-100 insp-main-img" alt="Inner Peace Bedroom">
                                 
                                 <div class="position-absolute insp-box d-flex flex-column align-items-start shadow-sm">
