@@ -26,7 +26,6 @@
                         <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="shop.html">Shop</a></li>
                         <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="#">About</a></li>
                         <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark px-0 fs-5 fs-md-6" href="blog.html">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,112 +61,107 @@
         </div>
     </div>
 
-    <!-- ===== PRODUCT MAIN SECTION ===== -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row gx-5 gy-4">
+<!-- ===== PRODUCT MAIN SECTION ===== -->
+<section class="py-5" id="product-main-section">
+  <div class="container" id="product-container" >
+    <div class="row gx-5 gy-4" id="product-row">
 
-                <!-- Left: Image Gallery -->
-                <div class="col-md-6">
-                    <div class="d-flex gap-3">
-                        <!-- Thumbnails column -->
-                        <div class="thumb-gallery d-flex flex-column gap-3">
-                            <img src="asset/images/thumb-1.png" class="thumb-img" alt="Sofa view 1" onclick="setMain(this)">
-                            <img src="asset/images/thumb-2.png" class="thumb-img" alt="Sofa view 2" onclick="setMain(this)">
-                            <img src="asset/images/thumb-3.png" class="thumb-img" alt="Sofa view 3" onclick="setMain(this)">
-                            <img src="asset/images/thumb-4.png" class="thumb-img" alt="Sofa view 4" onclick="setMain(this)">
-                        </div>
-                        <!-- Main image -->
-                        <div class="flex-grow-1">
-                            <img id="mainProductImg" src="asset/images/single-main.png" class="main-product-img" alt="Asgaard Sofa Main">
-                        </div>
-                    </div>
-                </div>
+      <!-- Left: Image Gallery -->
+      <div class="col-md-6" id="product-gallery-col">
+        <div class="d-flex gap-3" id="product-gallery">
+          <!-- Thumbnails column -->
+          <div class="thumb-gallery d-flex flex-column gap-3" id="product-thumbs">
+            <img src="asset/images/thumb-1.png" class="thumb-img" alt="Sofa view 1" onclick="setMain(this)">
+            <img src="asset/images/thumb-2.png" class="thumb-img" alt="Sofa view 2" onclick="setMain(this)">
+            <img src="asset/images/thumb-3.png" class="thumb-img" alt="Sofa view 3" onclick="setMain(this)">
+            <img src="asset/images/thumb-4.png" class="thumb-img" alt="Sofa view 4" onclick="setMain(this)">
+          </div>
+          <!-- Main image -->
+          <div class="flex-grow-1" id="product-main-img-box" id="cards-home-index">
+            <img id="cards-home-index" id="mainProductImg" src="asset/images/single-main.png" class="main-product-img" alt="Asgaard Sofa Main">
+          </div>
+        </div>
+      </div>
 
-                <!-- Right: Product Info -->
-                <div class="col-md-6">
-                    <h1 class="product-title">Asgaard sofa</h1>
-                    <p class="product-price">Rs. 250,000.00</p>
+      <!-- Right: Product Info -->
+      <div class="col-md-6" id="product-info-col">
+        <h1 class="product-title">Asgaard sofa</h1>
+        <p class="product-price">Rs. 250,000.00</p>
 
-                    <!-- Stars + Review Count -->
-                    <div class="star-review-row">
-                        <div class="stars d-flex gap-1">
-                            <!-- 4 full stars + 1 half star -->
-                            <img src="asset/images/star.png" alt="star" width="20" height="20">
-                            <img src="asset/images/star.png" alt="star" width="20" height="20">
-                            <img src="asset/images/star.png" alt="star" width="20" height="20">
-                            <img src="asset/images/star.png" alt="star" width="20" height="20">
-                            <img src="asset/images/star-half.png" alt="half star" width="20" height="20">
-                        </div>
-                        <span class="review-count">5 Customer Review</span>
-                    </div>
+        <!-- Stars + Review Count -->
+        <div class="star-review-row" id="product-review-row">
+          <div class="stars d-flex gap-1">
+            <img src="asset/images/star.png" alt="star" width="20" height="20">
+            <img src="asset/images/star.png" alt="star" width="20" height="20">
+            <img src="asset/images/star.png" alt="star" width="20" height="20">
+            <img src="asset/images/star.png" alt="star" width="20" height="20">
+            <img src="asset/images/star-half.png" alt="half star" width="20" height="20">
+          </div>
+          <span class="review-count">5 Customer Review</span>
+        </div>
 
-                    <p class="product-desc-text">
-                        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
-                    </p>
+        <p class="product-desc-text" id="product-desc">
+          Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+        </p>
 
-                    <!-- Size -->
-                    <div class="mb-4">
-                        <p class="option-label">Size</p>
-                        <div class="d-flex gap-2">
-                            <button class="size-btn active" onclick="selectSize(this)">L</button>
-                            <button class="size-btn" onclick="selectSize(this)">XL</button>
-                            <button class="size-btn" onclick="selectSize(this)">XS</button>
-                        </div>
-                    </div>
+        <!-- Size -->
+        <div class="mb-4" id="product-size-box">
+          <p class="option-label">Size</p>
+          <div class="d-flex gap-2">
+            <button class="size-btn active" onclick="selectSize(this)">L</button>
+            <button class="size-btn" onclick="selectSize(this)">XL</button>
+            <button class="size-btn" onclick="selectSize(this)">XS</button>
+          </div>
+        </div>
 
-                    <!-- Color -->
-                    <div class="mb-4">
-                        <p class="option-label">Color</p>
-                        <div class="d-flex gap-3">
-                            <span class="color-dot active" style="background-color: #816DFA;" onclick="selectColor(this)" title="Purple"></span>
-                            <span class="color-dot" style="background-color: #000000;" onclick="selectColor(this)" title="Black"></span>
-                            <span class="color-dot" style="background-color: #B88E2F;" onclick="selectColor(this)" title="Gold"></span>
-                        </div>
-                    </div>
+        <!-- Color -->
+        <div class="mb-4" id="product-color-box">
+          <p class="option-label">Color</p>
+          <div class="d-flex gap-3">
+            <span class="color-dot active" style="background-color: #816DFA;" onclick="selectColor(this)" title="Purple"></span>
+            <span class="color-dot" style="background-color: #000000;" onclick="selectColor(this)" title="Black"></span>
+            <span class="color-dot" style="background-color: #B88E2F;" onclick="selectColor(this)" title="Gold"></span>
+          </div>
+        </div>
 
-                    <!-- Quantity + Add to Cart + Compare -->
-                    <div class="d-flex align-items-center gap-3 flex-wrap qty-actions">
-                        <div class="qty-box">
-                            <button class="qty-btn" onclick="changeQty(-1)">-</button>
-                            <input type="number" class="qty-input" id="qtyInput" value="1" min="1">
-                            <button class="qty-btn" onclick="changeQty(1)">+</button>
-                        </div>
-                        <button class="btn-add-cart" onclick="window.location.href='cart.html'">Add To Cart</button>
-                        <button class="btn-compare" onclick="window.location.href='compare.html'">+ Compare</button>
-                    </div>
+        <!-- Quantity + Add to Cart + Compare -->
+        <div class="d-flex align-items-center gap-3 flex-wrap qty-actions" id="product-action-row">
+          <div class="qty-box" id="product-qty-box" id="cards-home-index">
+            <button class="qty-btn" onclick="changeQty(-1)">-</button>
+            <input type="number" class="qty-input" id="qtyInput" value="1" min="1">
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+          </div>
+          <button class="btn-add-cart" id="btn-add-cart" onclick="window.location.href='cart.html'">Add To Cart</button>
+          <button class="btn-compare" id="btn-compare" onclick="window.location.href='compare.html'">+ Compare</button>
+        </div>
 
                     <!-- Meta Info -->
-                    <div class="product-meta">
-                        <div class="meta-row">
-                            <span class="meta-label">SKU</span>
-                            <span style="color:#9F9F9F;">:</span>
-                            <span class="meta-value">SS001</span>
+                   <div id="product-meta-container" class="product-meta pt-4 mt-5 border-top mx-auto mx-md-0">
+                        <div id="meta-row-sku" class="meta-row d-flex mb-3 align-items-center">
+                            <span id="meta-label-sku" class="meta-label" style="color:#9F9F9F;">SKU</span>
+                            <span id="meta-colon-sku" class="meta-colon" style="color:#9F9F9F;">:</span>
+                            <span id="meta-value-sku" class="meta-value" style="color:#9F9F9F;">SS001</span>
                         </div>
-                        <div class="meta-row">
-                            <span class="meta-label">Category</span>
-                            <span style="color:#9F9F9F;">:</span>
-                            <span class="meta-value">Sofas</span>
+                        <div id="meta-row-category" class="meta-row d-flex mb-3 align-items-center">
+                            <span id="meta-label-category" class="meta-label" style="color:#9F9F9F;">Category</span>
+                            <span id="meta-colon-category" class="meta-colon" style="color:#9F9F9F;">:</span>
+                            <span id="meta-value-category" class="meta-value" style="color:#9F9F9F;">Sofas</span>
                         </div>
-                        <div class="meta-row">
-                            <span class="meta-label">Tags</span>
-                            <span style="color:#9F9F9F;">:</span>
-                            <span class="meta-value">Sofa, Chair, Home, Shop</span>
+                        <div id="meta-row-tags" class="meta-row d-flex mb-3 align-items-start">
+                            <span id="meta-label-tags" class="meta-label" style="color:#9F9F9F;">Tags</span>
+                            <span id="meta-colon-tags" class="meta-colon" style="color:#9F9F9F;">:</span>
+                            <span id="meta-value-tags" class="meta-value" style="color:#9F9F9F;">Sofa, Chair, Home, Shop</span>
                         </div>
-                        <div class="meta-row">
-                            <span class="meta-label">Share</span>
-                            <span style="color:#9F9F9F;">:</span>
-                            <div class="share-icons d-flex gap-3 align-items-center">
-                                <a href="#"><img src="asset/images/facebook.png" alt="Facebook"></a>
-                                <a href="#"><img src="asset/images/linkedin.png" alt="LinkedIn"></a>
-                                <a href="#"><img src="asset/images/twitter.png" alt="Twitter"></a>
+                        <div id="meta-row-share" class="meta-row d-flex align-items-center">
+                            <span id="meta-label-share" class="meta-label" style="color:#9F9F9F;">Share</span>
+                            <span id="meta-colon-share" class="meta-colon" style="color:#9F9F9F;">:</span>
+                            <div id="meta-share-icons" class="d-flex gap-3 align-items-center">
+                                <a href="#" id="share-fb"><img src="asset/images/facebook.png" alt="Facebook" width="20"></a>
+                                <a href="#" id="share-in"><img src="asset/images/linkedin.png" alt="LinkedIn" width="20"></a>
+                                <a href="#" id="share-tw"><img src="asset/images/twitter.png" alt="Twitter" width="20"></a>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
     </section>
 
     <!-- ===== DESCRIPTION TABS SECTION ===== -->
@@ -227,7 +221,7 @@
                                 <img src="./asset/images/syltherine.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #E97171;">-30%</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -251,7 +245,7 @@
                             <div class="position-relative overflow-hidden product-image-container">
                                 <img src="./asset/images/leviosa.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -275,7 +269,7 @@
                                 <img src="./asset/images/lolito.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #E97171;">-50%</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
@@ -300,7 +294,7 @@
                                 <img src="./asset/images/respira.png" class="card-img-top rounded-0 w-100 h-100" style="object-fit: cover;">
                                 <span class="badge position-absolute top-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 48px; height: 48px; background-color: #2EC1AC;">New</span>
                                 <div class="product-overlay position-absolute w-100 h-100 top-0 start-0 d-flex flex-column align-items-center justify-content-center gap-3">
-                                    <button class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                                    <button id="home-explore-btn" class="btn btn-overlay-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                                     <div class="d-flex gap-4 text-white fw-medium mt-2">
                                         <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/share-icon.png" width="16"></a>
                                         <a href="comparison.html" class="text-white text-decoration-none d-flex align-items-center gap-1 hover-gold"><img src="asset/images/compare-icon.png" width="16"></a>
